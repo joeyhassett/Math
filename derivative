@@ -1,0 +1,27 @@
+import numpy as np
+
+def f(x):
+  return np.exp(x)
+
+def derivative_backward(f, x, h):
+  return (f(x) - f(x-h)) / h
+
+
+def derivative_forward(f, x, h):
+  return (f(x-h) - f(x)) / h
+
+
+def derivative_centered (f, x, h):
+  return ((x+h) - f(x-h)) / (2 * h)
+
+
+def main():
+  x1 = 0
+  x2 = 100
+
+  N = 101
+  h = (x2 - x1) / N
+
+  x_axis = np.linspace(x1, x2, num = N)
+  squarer = lambda t: t ** 2
+  
