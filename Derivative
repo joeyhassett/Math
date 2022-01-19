@@ -6,14 +6,11 @@ def f(x):
 def derivative_backward(f, x, h):
   return (f(x) - f(x-h)) / h
 
-
 def derivative_forward(f, x, h):
   return (f(x-h) - f(x)) / h
 
-
 def derivative_centered (f, x, h):
   return ((x+h) - f(x-h)) / (2 * h)
-
 
 def main():
   x1 = 0
