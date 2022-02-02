@@ -1,1 +1,1 @@
-Working to code Calculus curriculum as an introduction to Github.
+Working to code Calculus curriculum as my introduction to Github.
